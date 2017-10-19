@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+
+# by Radoslaw Gronski, 14 July 2017
+# call: ci [message how long you want even without quotes]
+# effect: does 'git add .' and then 'git commit -m "CURRENT_BRANCH_NAME: message how long you want even without quotes"'
+
+import sys
+import subprocess
+
+arguments = sys.argv[1:]
+message = " ".join(arguments)
+
+git_byte_output = subprocess.check_output(["git", "symbolic-ref", "--short", "HEAD"])
+
+git_string_output = str (git_byte_output)
+branch_name = git_string_output[2 : len(git_string_output)-3]
+
+subprocess.call(["git", "add", "."])
+subprocess.call(["git", "commit", "-m", branch_name + ": " + message])
