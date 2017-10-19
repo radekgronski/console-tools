@@ -2,7 +2,11 @@
 GNU/Linux console tools.
 
 
-## Instruction:
+## Tools description
+**ci** Does `git add .` and then `git commit -m "CURRENT_BRANCH_NAME: message how long you want even without quotes"`. Recommended for lazy developers who need to have the branch name in their commit messages.
+
+
+## Instruction
 
 Copy or move the script file to /usr/bin
 ```
@@ -20,7 +24,7 @@ ci My commit message.
 ```
 
 
-## Tip:
+## Tip
 You can rename the script as you want and call it by this name.
 ```
 mv ci commit
