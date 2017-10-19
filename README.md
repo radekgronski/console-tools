@@ -4,7 +4,7 @@ GNU/Linux console tools.
 
 ## Tools description
 ### ci
-Does `git add .` and then `git commit -m "CURRENT_BRANCH_NAME: message how long you want even without quotes"`. Recommended for lazy developers who need to have the branch name in their commit messages.
+Does `git add .` and then `git commit -m "CURRENT_BRANCH_NAME: message how long you want even without quotes"`. Recommended for lazy developers who need to have the branch name in their commit messages. Requires Python 3.
 
 
 ## Instruction
